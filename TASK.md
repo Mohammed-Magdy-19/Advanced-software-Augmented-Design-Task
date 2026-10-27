@@ -48,3 +48,78 @@ Email: repo link, names and IDs of all members. Subject: `[Design Task] Team XX 
 - 10: the automatic check is green
 
 Rules: the AI drafts, you review. Do not invent AI mistakes: a journal is graded on what you actually checked. Work that nobody in the team can explain loses marks.
+
+## Additional Doctor Appointment Booking System Instructions
+
+Team size must be **2–4 students**. A fifth member is allowed only if necessary.
+
+The **Dockerfile is required only for teams of 5 students**. Teams with 2–4 members can ignore the Docker task.
+
+In this task, your team will design and implement a simple **Doctor Appointment Booking System**, following the same steps demonstrated in the lab.
+
+### 1. Requirements
+
+Create a file named `requirements.txt` containing the following requirements:
+
+| ID | Requirement |
+|---|---|
+| R1 | A patient can view the days and times when a doctor is available. |
+| R2 | A patient can book an appointment during an available time slot. |
+| R3 | A doctor can accept or decline an appointment request. |
+| R4 | A patient can have at most **N** upcoming appointments at any given time. |
+| R5 | Patient medical data shall be accessible only to authorized staff. |
+| R6 | Available appointment times shall be displayed within 2 seconds. |
+| R7 | The application shall be usable on mobile phone screens. |
+
+**Note:** `N` represents the maximum number of upcoming appointments allowed per patient. Your team must choose and document its value.
+
+### 2. Team Responsibilities
+
+Each student must build upon the previous student's work.
+
+**Student 1 – Use Case Design**
+
+- Read and create `requirements.txt` with the requirements above.
+- Write the use cases in `use_cases.md`.
+- Create a Use Case Diagram using Mermaid in `use_case_diagram.md`.
+- Commit and push both files to the GitHub repository.
+
+**Student 2 – Class Diagram**
+
+- Read the requirements and Student 1's use cases.
+- Design a Class Diagram using Mermaid.
+- Save it in `class_diagram.md`.
+- Commit and push the file to the repository.
+
+**Student 3 – Sequence Diagram**
+
+- Read the previous deliverables, especially the Class Diagram.
+- Create a Sequence Diagram using Mermaid that illustrates the appointment booking process.
+- Save it in `sequence_diagram.md`.
+- Commit and push the file to the repository.
+
+**Student 4 – Implementation**
+
+- Read the requirements, use cases, Class Diagram, and Sequence Diagram.
+- Implement a simple working application using Python or another suitable programming language.
+- Keep the implementation as simple as possible, following the lab example.
+- Add instructions for running the application in `README.md`.
+- Commit and push the source code to the repository.
+
+**Student 5 – Docker (If Applicable)**
+
+- Read the implementation and its execution instructions.
+- Create a `Dockerfile` for the application.
+- Ensure the application can be built and run inside a Docker container.
+- Add Docker build and run commands to `README.md`.
+- Commit and push the files to the repository.
+
+### 3. Important Instructions
+
+1. **All diagrams must be written using Mermaid code**, as demonstrated in the lab, and stored in Markdown (`.md`) files.
+2. Each student must use the previous student's deliverables as input.
+3. Each student must work on their own Git branch and submit their changes through a Pull Request.
+4. The team must review and merge the Pull Requests in the correct order.
+5. The implementation must be consistent with the requirements and diagrams.
+6. If your team has only four members, the Docker task is not required.
+7. Keep the application simple. The objective is to practice the complete software engineering workflow, not to build a production-ready system.
