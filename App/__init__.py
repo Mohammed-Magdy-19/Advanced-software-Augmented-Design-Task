@@ -1,0 +1,1 @@
+"""Clinic appointment booking application."""
